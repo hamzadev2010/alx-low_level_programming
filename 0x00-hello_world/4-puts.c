@@ -1,8 +1,7 @@
-#!/bin/bash
 #include <studio.h>
 /**
  * main - A programme print a line with function
-* Return :0 ( success)
+* Return :0( success)
 */
 int main(void)
 {
