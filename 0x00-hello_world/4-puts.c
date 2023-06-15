@@ -1,10 +1,12 @@
 #include <stdio.h>
+
 /**
- * main - A programme print a line with function
-* Return :0( success)
-*/
+ * main - Entry point of the program
+ *
+ * Return: 0 (Success)
+ */
 int main(void)
 {
-putes("\"Programming is like building a multilingual puzzle");
-return (0);
+    printf("\"Programming is like building a multilingual puzzle\n");
+    return 0;
 }
