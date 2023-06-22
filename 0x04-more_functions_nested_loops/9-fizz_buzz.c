@@ -1,42 +1,37 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * main - Prints the numbers from 1 to 100, followed by a new line.
- *        For multiples of three, prints "Fizz" instead of the number.
- *        For multiples of five, prints "Buzz" instead of the number.
- *        For numbers that are multiples of both three and five, prints "FizzBuzz".
+ * main - Prints "FizzBuzz" for numbers divisible by both 3 and 5,
+ *        "Fizz" for numbers divisible by 3, "Buzz" for numbers divisible by 5,
+ *        and the number itself for other numbers from 1 to 100.
  *
- * Return: Always 0 (Success).
+ * Return: Always 0.
  */
 int main(void)
 {
-	int i;
+	int n;
 
-	for (i = 1; i <= 100; i++)
+	n = 1;
+	printf("%d", n);
+	for (n = 2; n <= 100; n++)
 	{
-		if (i % 3 == 0 && i % 5 != 0)
-		{
-			printf(" Fizz");
-		}
-		else if (i % 5 == 0 && i % 3 != 0)
-		{
-			printf(" Buzz");
-		}
-		else if (i % 3 == 0 && i % 5 == 0)
+		if ((n % 3 == 0) && (n % 5 == 0))
 		{
 			printf(" FizzBuzz");
 		}
-		else if (i == 1)
+		else if (n % 3 == 0)
 		{
-			printf("%d", i);
+			printf(" Fizz");
+		}
+		else if (n % 5 == 0)
+		{
+			printf(" Buzz");
 		}
 		else
 		{
-			printf(" %d", i);
+			printf(" %d", n);
 		}
 	}
 	printf("\n");
-
 	return (0);
 }
