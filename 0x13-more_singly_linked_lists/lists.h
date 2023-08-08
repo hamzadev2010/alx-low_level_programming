@@ -5,12 +5,11 @@
 #include <stdlib.h>
 
 /**
- * struct listint_s - linked list
- * @n: integer
- * @next: means to next code 
+ * struct listint_s - Structure for a linked list
+ * @n: The integer data of the node
+ * @next: Pointer to the next node in the list
  *
- *  list node structure
- * alx projet
+ * Description: Defines a node structure for a singly linked list.
  */
 typedef struct listint_s
 {
@@ -18,6 +17,7 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+/* Function prototypes */
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
@@ -34,4 +34,4 @@ size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
 
-#endif
+#endif /* LISTS_H */
