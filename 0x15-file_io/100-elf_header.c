@@ -40,8 +40,6 @@ void validate_elf_file(unsigned char *elf_magic)
 	}
 }
 
-/* Rest of the functions remain unchanged */
-
 /**
  * main - Displays information from the ELF header of a given file.
  * @argc: Number of arguments provided to the program.
@@ -91,5 +89,5 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 
 	free(header);
 	close_elf_file(elf_fd);
-	return 0;
+	return (0);
 }
