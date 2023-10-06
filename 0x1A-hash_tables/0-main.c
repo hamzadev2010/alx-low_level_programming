@@ -4,9 +4,9 @@
 #include "hash_tables.h"
 
 /**
- * main: checking the code
+ * main - check the code for
  *
- * Return: EXIT_SUCCESS.
+ * Return: Always EXIT_SUCCESS.
  */
 int main(void)
 {
@@ -16,4 +16,3 @@ int main(void)
     printf("%p\n", (void *)ht);
     return (EXIT_SUCCESS);
 }
-
