@@ -1,12 +1,10 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print :Display the hash table
- *
- *
- *
- * @ht:hash table
-**/
+ * hash_table_get - Display the element from the hash table
+ * @ht: The hash table
+*
+*/
 
 void hash_table_print(const hash_table_t *ht)
 {
