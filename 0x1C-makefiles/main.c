@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	print();
+	display_school();
 	return (0);
 }
 /* Holberton */
