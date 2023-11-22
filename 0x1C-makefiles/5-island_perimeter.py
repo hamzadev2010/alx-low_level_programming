@@ -1,20 +1,24 @@
 #!/usr/bin/python3
-"""Function island_perimeter"""
+""" Function island_perimeter """
 
 
 def island_perimeter(grid):
-"""return all param of island that was decribed in grid
-
-Args:grid list: the grid
     """
-k, c = len(grid), len(grid[0])
-island, house = 0, 0
-for i in range(k):
-for j in range(c):
-if grid[i][j] == 1:
-island += 1
-if i < k - 1 and grid[i+1][j] == 1:
-house += 1
-if j < c - 1 and grid[i][j + 1] == 1:
-house += 1
-return island * 4 - 2 * house
+    returns the perimeter of island that was described in grid
+    """
+    era = 0
+    """ 0 describe the specific era.  1 represents a land era"""
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
+            if grid[i][j] == 1:
+                if i < len(grid) - 1 and grid[i + 1][j]:
+                    era += 1
+                if i > 0 and grid[i - 1][j]:
+                    era += 1
+                if j < len(grid[i]) - 1 and grid[i][j + 1]:
+                    era += 1
+                if j > 0 and grid[i][j - 1]:
+                        era += 1
+                era -= 4
+    era = era * - 1
+    return era
