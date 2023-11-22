@@ -1,12 +1,12 @@
 #include "m.h"
+
 /**
- *main - the main program
- *Return: zero (0)
+ * main - The entry point
  *
+ * Return: 
  */
 int main(void)
 {
 	display_school();
-	return (0);
+	return (EXIT_SUCCESS);
 }
-/* Holberton */
