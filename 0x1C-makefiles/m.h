@@ -3,6 +3,6 @@
 
 #include <stdio.h>
 
-void print(void);
+void display_school(void);
 
 #endif
