@@ -6,11 +6,9 @@
 
 /**
  * struct listint_s - singly linked list
- *
  * @n: Int
  * @index: index of node
  * @next: a pointer for new node
- *
  * Description: singly linked list node structure for alx 
  */
 typedef struct listint_s
@@ -39,12 +37,11 @@ typedef struct skiplist_s
 	struct skiplist_s *express;
 } skiplist_t;
 
-skiplist_t *linear_skip(skiplist_t *list, int value);
-
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
 int jump_search(int *array, size_t size, int value);
 int interpolation_search(int *array, size_t size, int value);
 int exponential_search(int *array, size_t size, int value);
 int advanced_binary(int *array, size_t size, int value);
+
 #endif
