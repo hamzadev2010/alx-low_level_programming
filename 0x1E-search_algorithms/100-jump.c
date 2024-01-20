@@ -33,8 +33,13 @@ int jump_search(int *array, size_t size, int value)
 	printf("Value found between indexes [%d] and [%d]\n", big, last);
         
 
-	for (; last <= big && last < (int)size && array[last] < value; last++) {
-    printf("Value checked array[%d] = [%d]\n", last, array[last]);
-    if (array[last] == value)
-        return (last);
+	while ( big <= last && big < (int)size)
+	{
+		printf("Value checked array[%d] = [%d]\n", big, array[last]);
+		if (array[big] == value)
+			return (big);
+		big++;
+	}
+
+	return (-1);
 }
